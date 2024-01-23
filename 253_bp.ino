@@ -43,9 +43,16 @@ void loop()
   else if (push_button2.isPressed())
   {
     //  draft a loop to print the table
-    Serial.println(count)
+    Serial.println(count);
+    Serial.print("Table of ");
+
+     for (int i = 1; i <= 10; i++)
+    {
+      Serial.print(count);
+    }
 
     //  reset the number to 0, once table is printed
+    count = 0;
   }
  
 }
